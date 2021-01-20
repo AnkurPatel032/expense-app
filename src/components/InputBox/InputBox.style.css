@@ -1,0 +1,24 @@
+.form-container
+{
+    position: relative;
+    margin:25px 0;
+    width: 50%;
+}
+
+.form-input
+{
+    background: none;
+    background-color: white;
+    color: gray;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 97%;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid gray;
+}
+
+.form-input:focus{
+    outline: none;
+}

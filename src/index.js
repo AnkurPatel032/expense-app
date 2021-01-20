@@ -1,17 +1,23 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { render } from 'react-dom';
+import 'react-app-polyfill/ie11';
+import AddExpensePage from './pages/AddExpensePage/AddExpensePage';
+import DashboardPage from './pages/DashbordPage/DashboardPage';
+import { configurStore } from './store/configureStore';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const store=configurStore();
+console.log("Store :::"+JSON.stringify(store.getState()));
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const App=() =>{
+
+  return(
+    <div><h1>Expense Application</h1>
+    <DashboardPage/>
+    <AddExpensePage/>
+    </div>
+  );
+
+}
+
+render(<App />,document.getElementById('root'));
+

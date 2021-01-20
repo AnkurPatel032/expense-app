@@ -1,0 +1,10 @@
+.action-button{
+    background-color: black;
+    color:white;
+    text-transform: uppercase;
+    width:45%;
+    border:none;
+    margin-right:3%;
+    height:40px;
+
+}
