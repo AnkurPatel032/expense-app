@@ -2,12 +2,12 @@ const dummyValues=[
     {   "id":1,
         "description":"Macbook pro",
         "amount":142000,
-        "date":"15/01/2021"
+        "date":"Sat Jan 15 2021 00:00:00 GMT+0530 (India Standard Time)		"
     },
     {   "id":2,
         "description":"iphon 12",
         "amount":147780,
-        "date":"25/01/2021"
+        "date":"Sat Jan 25 2021 00:00:00 GMT+0530 (India Standard Time)		"
     }
 ];
 
