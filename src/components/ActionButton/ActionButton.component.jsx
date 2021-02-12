@@ -1,11 +1,11 @@
 import React from "react";
 import "./ActionButton.style.css";
 
-const ActionButton=({buttonText})=>{
-    return(<div>
-
-<button className="action-button">{buttonText}</button>
- 
+const ActionButton = ({ buttonText, clickHandler }) => {
+    return (<div>
+ <div class="col-md-12">
+        <button onClick={clickHandler} className="btn btn-primary">{buttonText}</button>
+        </div>
     </div>);
 }
 

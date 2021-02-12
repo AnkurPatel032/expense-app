@@ -2,10 +2,12 @@ import React from "react";
 import "./InputBox.style.css"
 
 
-const InputBox=({typeValue,placeholder})=>{
+const InputBox=({idText,changeHandler,textValue,typeValue,placeholder})=>{
+    
 return(
     <div className="form-container">
-       <input className="form-input" type={typeValue} placeholder={placeholder}/>
+       <input name={idText} className="form-control form-input " onChange={changeHandler} type={typeValue} placeholder={placeholder} value={textValue}/>
+     
     </div>
 );
 
